@@ -1,0 +1,8 @@
+npm notice name: @capitalthought/highfives-mcp
+npm notice version: 0.4.0
+npm error code E403
+npm error 403 403 Forbidden - PUT https://registry.npmjs.org/@capitalthought%2fhighfives-mcp - You cannot publish over the previously published versions: 0.4.0.
+npm error 403 In most cases, you or one of your dependencies are requesting
+npm error 403 a package version that is forbidden by your security policy, or
+npm error 403 on a server you do not have access to.
+npm error A complete log of this run can be found in: /Users/joshuabaer/.npm/_logs/2026-04-19T06_42_01_000Z-debug-0.log

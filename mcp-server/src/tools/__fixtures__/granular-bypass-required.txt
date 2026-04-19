@@ -1,0 +1,5 @@
+npm notice Publishing to https://registry.npmjs.org/ with tag latest and public access
+npm error code E403
+npm error 403 403 Forbidden - PUT https://registry.npmjs.org/@capitalthought%2fhighfives-mcp - Two-factor authentication or granular access token with bypass 2fa enabled is required to publish packages.
+npm error 403 In most cases, you or one of your dependencies are requesting a package version that is forbidden by your security policy, or on a server you do not have access to.
+npm error A complete log of this run can be found in: /Users/joshuabaer/.npm/_logs/2026-04-19T04_22_33_722Z-debug-0.log

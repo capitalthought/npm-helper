@@ -1,0 +1,5 @@
+npm error code E404
+npm error 404 Not Found - PUT https://registry.npmjs.org/@typo-scope%2fsome-pkg
+npm error 404
+npm error 404  '@typo-scope/some-pkg@0.1.0' is not in this registry.
+npm error A complete log of this run can be found in: /Users/joshuabaer/.npm/_logs/2026-04-19T06_46_00_000Z-debug-0.log
