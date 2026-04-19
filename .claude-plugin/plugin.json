@@ -1,0 +1,8 @@
+{
+  "name": "npm-helper",
+  "version": "0.1.0",
+  "description": "Automate npm auth, token rotation, and publish for Claude Code. Kills the EOTP / E403 / stale-1Password-password back-and-forth.",
+  "author": "Capital Thought",
+  "homepage": "https://github.com/capitalthought/npm-helper",
+  "license": "MIT"
+}

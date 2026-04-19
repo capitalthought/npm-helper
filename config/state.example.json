@@ -1,0 +1,25 @@
+{
+  "accounts": {
+    "capitalthought": {
+      "npm_user": "capitalthought",
+      "onepass_item_id": "2pwg442tqhg3usv4y2kuvwwroe",
+      "pw_field": "password",
+      "recovery_codes_field": "Recovery Codes.recovery_codes",
+      "fallback_2fa": "webauthn"
+    }
+  },
+  "packages": {
+    "@capitalthought/highfives-mcp": {
+      "account": "capitalthought",
+      "repo": "capitalthought/highfives",
+      "publish_workflow": ".github/workflows/publish-mcp.yml",
+      "gh_secret_name": "NPM_TOKEN",
+      "vercel_projects": [],
+      "token_id": "unset",
+      "token_sha256": "unset",
+      "token_last_rotated": null,
+      "token_scope": "granular, bypass-2fa, pkg-scoped",
+      "two_factor_level": "disabled"
+    }
+  }
+}

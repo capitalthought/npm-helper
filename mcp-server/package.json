@@ -1,0 +1,43 @@
+{
+  "name": "@capitalthought/npm-helper-mcp",
+  "version": "0.1.0",
+  "description": "MCP server for npm-helper Claude Code plugin. Owns the error classifier + credential sync tools.",
+  "license": "MIT",
+  "author": "Capital Thought",
+  "type": "module",
+  "bin": {
+    "npm-helper-mcp": "dist/index.js"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsc --watch",
+    "test": "vitest run",
+    "prepublishOnly": "npm run build"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "zod": "^3.25.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.4.0",
+    "vitest": "^2.0.0"
+  },
+  "keywords": [
+    "mcp",
+    "npm",
+    "publish",
+    "claude-code",
+    "automation"
+  ]
+}
