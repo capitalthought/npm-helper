@@ -40,6 +40,7 @@ npm run build
 
 | Slash command | What it does |
 |---|---|
+| `/npm-register` | One-time setup per package — writes `state.json` (1P item, GH repo, publish workflow, secret, Vercel mirrors). |
 | `/npm-publish` | One-shot publish: reconcile creds, bump version, tag, push, tail workflow, recover on failure. |
 | `/npm-doctor` | Read-only diagnosis. Reports npm ↔ 1Password ↔ GH Actions drift. |
 | `/npm-rotate-token` | Mint a fresh granular+bypass-2fa token. Updates 1P + GH secret. Revokes the old one. |

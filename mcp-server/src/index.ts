@@ -16,6 +16,7 @@ import { classifyError } from './tools/classify.js'
 import * as npm from './tools/npm.js'
 import * as onepass from './tools/onepass.js'
 import * as gh from './tools/gh.js'
+import { findPublishWorkflows } from './tools/workflow.js'
 import { fingerprintToken, loadState, saveState, statePath } from './state.js'
 
 const server = new McpServer(
@@ -158,6 +159,16 @@ server.registerTool(
     },
   },
   async (args) => ok(await gh.latestRun(args.repo, args.workflow))
+)
+
+server.registerTool(
+  'workflow_find_publish',
+  {
+    description:
+      'Scan `<repo_root>/.github/workflows/*.{yml,yaml}` for files that run `npm publish`. Returns all matches so the caller can auto-pick when there is exactly one or ask when there are more. Used by /npm-register.',
+    inputSchema: { repo_root: z.string() },
+  },
+  async (args) => ok({ matches: await findPublishWorkflows(args.repo_root) })
 )
 
 server.registerTool(
