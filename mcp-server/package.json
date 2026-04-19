@@ -1,6 +1,6 @@
 {
   "name": "@capitalthought/npm-helper-mcp",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "MCP server for npm-helper Claude Code plugin. Owns the error classifier + credential sync tools.",
   "license": "MIT",
   "author": "Capital Thought",
